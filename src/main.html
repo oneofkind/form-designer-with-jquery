@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./lib/jquery-ui.js"></script>
     <script src="../node_modules/lodash/lodash.min.js"></script>
     <script src="js/main.js"></script>
 
@@ -15,8 +17,41 @@
 
 <body>
 <div>
-    <div id="container"></div>
+    <div id="container">
+        <h1 class="title-design">Form Designer</h1>
+        <h1 class="title-show" hidden>Form</h1>
+        <!-- main-form -->
+        <div id="btn-group">
+            <button id="add">Add</button>
+            <button id="preview">Preview-Mode</button>
+            <button id="edit" class="hidden">Edit-Mode</button>
+        </div>
+        <hr>
+        <form id="form"></form>
+        <!-- dialog -->
+        <div id="dialog" title="elementCreator" hidden>
+            <form>
+                <label for="title">
+                    标题
+                    <input name="title" type="text" autocomplete="off">
+                </label>
+                <label for="type">
+                    类型
+                    <select name="type">
+                        <option value="">请选择</option>
+                        <option value="text">文本</option>
+                        <option value="date">时间</option>
+                        <option value="number">数字</option>
+                    </select>
+                </label>
+                <button type="submit">
+                    submit
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
-</body>
-</html>
 
+</body>
+
+</html>

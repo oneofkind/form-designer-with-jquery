@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+form .form-control {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#container .title-show {
+    text-align: center;
+}
+
+#container #form {
+    padding: 20px;
+}
+
+#dialog form>* {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#dialog form button[type=submit] {
+    background: teal;
+    border: 0;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+button[disabled=disabled] {
+    cursor: not-allowed;
+    background-color: gray;
+}
