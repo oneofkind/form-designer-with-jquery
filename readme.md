@@ -33,7 +33,7 @@
 * 使用快捷键编写代码
 
 ## 交付物
-包括 HTML 和 JavaScript， CSS 为可选。
+包括 HTML 和 JavaScript， CSS 为可选
 
 ## 环境
 * HTML 5
